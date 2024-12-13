@@ -1,0 +1,234 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #111;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensures the body takes up the full height of the screen */
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+  /* font-weight: bold; */
+  color: #f89b28;
+}
+
+header nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #f89b28;
+}
+
+header nav a:hover {
+  color: #fff;
+}
+
+.contact-cart {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.cart {
+  background: #f89b28;
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: #000;
+}
+
+.image-container {
+  width: 100%; /* Make the container fit the screen width */
+  max-width: 684.8px; /* Ensure it doesn't exceed the original size */
+  height: 300px;
+  margin: 20px auto; /* Center the container horizontally */
+  overflow: hidden; /* Ensure the image doesn't overflow */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container properly */
+  border: none; /* Remove the border */
+}
+
+header nav a {
+  color: #f89b28;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+header .contact {
+  text-align: right;
+}
+
+/* Main content area */
+main {
+  margin-left: 220px; /* Leaves space for the sidebar */
+  padding: 20px;
+  box-sizing: border-box;
+  flex-grow: 1; /* Ensure it takes up available space to push footer down */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: #222;
+  padding: 20px;
+  position: fixed;
+  height: 100%;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background: #333;
+}
+
+.sidebar li img {
+  margin-right: 15px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+/* Content Section */
+.content {
+  flex: 1;
+  padding: 20px;
+  background: #111;
+}
+
+.content h1 {
+  font-size: 40px; /* Larger font size for prominence */
+  color: #f89b28;
+  margin-bottom: 20px;
+}
+
+.about-container {
+  display: block;
+  padding: 20px;
+}
+
+.main-image {
+  width: 100%; /* Full width */
+  height: 25%; /* Reduced height for smaller image */
+  border-radius: 5px;
+}
+
+.about-container p {
+  font-size: 18px; /* Slightly larger font for better readability */
+  line-height: 1.8; /* Increased line height for clarity */
+  color: #ccc; /* Softer color for text */
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* Footer Section */
+.footer {
+  background: #000;
+  color: #f89b28;
+  padding: 40px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border-top: 2px solid #f89b28;
+  margin-top: 40px;
+  width: 100%;
+  position: relative; /* Ensures it stays at the bottom without overlapping */
+}
+
+.footer p {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #f89b28;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer .social-icons {
+  margin: 20px 0;
+}
+
+.footer .social-icons i {
+  font-size: 24px;
+  margin: 0 15px;
+  cursor: pointer;
+  color: #f89b28;
+  transition: color 0.3s ease;
+}
+
+.footer .social-icons i:hover {
+  color: #fff;
+}
+
+.footer .footer-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer .footer-links a {
+  margin: 0 15px;
+  color: #f89b28;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer .footer-links a:hover {
+  color: #fff;
+}
+
+/* Footer Responsive Styles */
+@media (max-width: 768px) {
+  .footer {
+      padding: 30px 15px;
+  }
+
+  .footer .social-icons {
+      margin-bottom: 20px;
+  }
+
+  .footer .footer-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer .footer-links a {
+      margin: 5px 0;
+  }
+}
