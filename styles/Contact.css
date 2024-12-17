@@ -262,3 +262,30 @@ button.submit-btn {
       margin: 5px 0;
   }
 }
+
+/* styles for view inquiries */
+.inquiry {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+.inquiry h3 {
+  color: #113805;
+  margin-bottom: 10px;
+}
+.inquiry p {
+  margin: 5px 0;
+}
+.inquiry a {
+  color: #007BFF;
+  text-decoration: none;
+  margin-right: 10px;
+}
+.inquiry a:hover {
+  text-decoration: underline;
+}
+
+
+
