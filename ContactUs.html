@@ -57,22 +57,18 @@
         <!-- Contact Section -->
         <section class="form-container">
           <h2>Get in Touch</h2>
-          <form id="contactForm">
+          <form id="contactForm" action="php/contact-form.php" method="POST">
             <div class="form-row">
-              <input type="text" placeholder="Your Name" required />
-              <input type="email" placeholder="Your Email" required />
+              <input type="text" name="name" placeholder="Your Name" required />
+              <input type="email" name="email" placeholder="Your Email" required />
             </div>
             <div class="form-row">
-              <input type="tel" placeholder="Your Contact Number" required />
-              <input type="text" placeholder="Subject" required />
+              <input type="tel" name="phone" placeholder="Your Contact Number" required />
+              <input type="text" name="subject" placeholder="Subject" required />
             </div>
-            <textarea
-              placeholder="Inquiry/Comments"
-              rows="5"
-              required
-            ></textarea>
+            <textarea name="message" placeholder="Inquiry/Comments" rows="5" required></textarea>
             <button type="submit" class="submit-btn">Submit</button>
-          </form>
+          </form>  
         </section>
       </main>
     </div>

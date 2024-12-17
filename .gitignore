@@ -1,0 +1,25 @@
+# Ignore database connection file
+php/db.php
+
+# Node.js dependencies
+node_modules/
+
+# PHP Composer dependencies
+vendor/
+
+# Environment files
+.env
+
+# IDE specific files
+*.idea/
+*.vscode/
+
+# Log files
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+
+# Cache files
+.cache/
