@@ -264,7 +264,7 @@ button.submit-btn {
 }
 
 /* styles for view inquiries */
-.inquiry {
+/* .inquiry {
   border: 1px solid #ddd;
   padding: 15px;
   margin: 10px 0;
@@ -277,6 +277,7 @@ button.submit-btn {
 }
 .inquiry p {
   margin: 5px 0;
+  color: black;
 }
 .inquiry a {
   color: #007BFF;
@@ -285,7 +286,7 @@ button.submit-btn {
 }
 .inquiry a:hover {
   text-decoration: underline;
-}
+} */
 
 
 

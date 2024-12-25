@@ -10,7 +10,7 @@ include('db.php'); // Include database connection
         /* Styling the buttons */
         .inquiry a {
             padding: 10px 20px;
-            background-color:#f89b28;
+            background-color: #f89b28;
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -19,7 +19,25 @@ include('db.php'); // Include database connection
         }
 
         .inquiry a:hover {
-            background-color:rgb(60, 61, 61);
+            background-color: rgb(60, 61, 61);
+        }
+
+        .inquiry {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .inquiry h3 {
+            color: #113805;
+            margin-bottom: 10px;
+        }
+
+        .inquiry p {
+            margin: 5px 0;
+            color: black;
         }
     </style>
     <meta charset="UTF-8">
@@ -58,6 +76,7 @@ include('db.php'); // Include database connection
                     echo "<p><strong>Phone:</strong> " . htmlspecialchars($row['phone']) . "</p>";
                     echo "<p><strong>Message:</strong> " . nl2br(htmlspecialchars($row['message'])) . "</p>";
                     echo "<p><strong>Submitted On:</strong> " . $row['created_at'] . "</p>";
+                    echo "<br>";
                     echo "<a href='delete-inquiry.php?id=" . $row['id'] . "'>Delete</a> | ";
                     echo "<a href='update-inquiry.php?id=" . $row['id'] . "'>Update</a>";
                     echo "</div><br><hr>";
