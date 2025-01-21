@@ -100,6 +100,22 @@ header nav a:hover {
     color: #000;
 }
 
+.profile {
+    margin-left: 10px;
+}
+
+.profile-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.profile-icon:hover {
+    transform: scale(1.1);
+}
+
 /* Sidebar */
 .sidebar {
     width: 200px;

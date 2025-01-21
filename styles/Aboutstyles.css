@@ -49,6 +49,22 @@ header nav a:hover {
   color: #000;
 }
 
+.profile {
+  margin-left: 10px;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
 .image-container {
   width: 100%; /* Make the container fit the screen width */
   max-width: 684.8px; /* Ensure it doesn't exceed the original size */

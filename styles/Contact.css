@@ -48,6 +48,22 @@ header nav a:hover {
   color: #000;
 }
 
+.profile {
+  margin-left: 10px;
+}
+
+.profile-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.profile-icon:hover {
+  transform: scale(1.1);
+}
+
 .container {
   display: flex;
   flex: 1;
@@ -168,6 +184,27 @@ button.submit-btn {
   color: #111;
   font-weight: bold;
 }
+
+button.submit-btn:hover{
+  background-color: gray;
+  color: white;
+  transition-duration: 0.1ms;
+}
+
+.view-inquiries-link {
+  color: #f89b28;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-left: 355px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.view-inquiries-link:hover {
+  color: gray;
+}
+
 
 .footer {
   background: #000;

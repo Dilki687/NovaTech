@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign In | NovaTech</title>
+    <!-- fontawsome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <form action="php/login.php" method="POST">
+        <h1>Login</h1>
+        <div class="input-box">
+          <input type="text" name="username" placeholder="Username" required />
+          <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div class="input-box">
+          <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+          <i class="fa-solid fa-lock"></i>
+        </div>
+
+        <!-- <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div> -->
+
+        <button type="submit" class="btn">Login</button>
+
+        <div class="register-link">
+          <p>Don't have an account<a href="register.html"> Register</a></p>
+        </div>
+      </form>
+    </div>
+
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: "Arial", sans-serif;
+        }
+      
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          background: #111; /* Dark background matching the theme */
+          color: #fff;
+        }
+      
+        .wrapper {
+          width: 420px;
+          background: #222; /* Dark card-like background */
+          border: 2px solid #f89b28; /* Accent color border */
+          border-radius: 10px;
+          padding: 30px 40px;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          color: #fff; /* Consistent text color */
+        }
+      
+        .wrapper h1 {
+          font-size: 36px;
+          text-align: center;
+          margin-bottom: 20px;
+          color: #f89b28; /* Highlighted text color */
+        }
+      
+        .wrapper .input-box {
+          position: relative;
+          width: 100%;
+          height: 50px;
+          margin: 30px 0;
+        }
+      
+        .input-box input {
+          width: 100%;
+          height: 100%;
+          background: transparent;
+          border: 2px solid #f89b28; /* Accent border */
+          border-radius: 25px;
+          font-size: 16px;
+          color: #fff;
+          padding: 0 45px 0 20px;
+        }
+      
+        .input-box input::placeholder {
+          color: #bbb; /* Subtle placeholder color */
+        }
+      
+        .input-box i {
+          position: absolute;
+          right: 15px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 20px;
+          color: #f89b28; /* Icon color matches theme */
+        }
+      
+        .wrapper .btn {
+          width: 100%;
+          height: 50px;
+          border: none;
+          background: #f89b28; /* Button background */
+          color: #000; /* Text contrasts button */
+          font-size: 18px;
+          font-weight: bold;
+          border-radius: 25px;
+          cursor: pointer;
+          transition: background 0.3s;
+        }
+      
+        .wrapper .btn:hover {
+          background: #fff; /* Highlight on hover */
+          color: #f89b28;
+        }
+      
+        .wrapper .register-link {
+          margin-top: 20px;
+          text-align: center;
+          font-size: 14px;
+        }
+      
+        .wrapper .register-link a {
+          color: #f89b28;
+          text-decoration: none;
+          font-weight: bold;
+          transition: color 0.3s;
+        }
+      
+        .wrapper .register-link a:hover {
+          color: #fff; /* Text highlight on hover */
+        }
+      </style>
+      
+  </body>
+</html>

@@ -7,6 +7,22 @@ include('db.php'); // Include database connection
 
 <head>
     <style>
+        .profile {
+            margin-left: 10px;
+        }
+
+        .profile-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .profile-icon:hover {
+            transform: scale(1.1);
+        }
+
         /* Styling the buttons */
         .inquiry a {
             padding: 10px 20px;
@@ -57,6 +73,11 @@ include('db.php'); // Include database connection
         <div class="contact-cart">
             <span>📞 0777 292 272</span>
             <div class="cart">0 LKR | Build Your PC</div>
+            <div class="profile">
+                <a href="../signin.html" title="Login">
+                    <img src="../images/profile-icon.jpg" alt="Profile Icon" class="profile-icon">
+                </a>
+            </div>
         </div>
     </header>
 
