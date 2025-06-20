@@ -10,7 +10,7 @@ body {
   height: 100vh; /* Ensures the body takes up the full height of the screen */
 }
 
-/* Header */
+/* Headerr */
 header {
   display: flex;
   justify-content: space-between;
